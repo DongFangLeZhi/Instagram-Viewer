@@ -14,3 +14,4 @@ profile picture and the likes counts. It took me roughly 4 hours for me to compl
 * [x] Optional: Improve UI and colors to match the actual Instagram application. 
 
 ##Demo
+![demo](https://github.com/FrancisMengx/Instagram-Viewer/blob/master/Week1Demo.gif)
