@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:background="#FFFFFF">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivUserProfile"
+            android:minHeight="30dp"
+            android:minWidth="30dp"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tvUserName"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivUserProfile"
+            android:layout_toEndOf="@+id/ivUserProfile"
+            android:textColor="#125688"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivPhoto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:minHeight="350dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test Text"
+            android:id="@+id/tvCaption"
+            android:textSize="20dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_below="@+id/tvLikesCount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ivHeart"
+            android:layout_below="@+id/ivPhoto"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tvLikesCount"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#125688"
+            android:layout_below="@+id/ivPhoto"
+
+            android:layout_toRightOf="@+id/ivHeart"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>
