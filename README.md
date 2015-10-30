@@ -1,4 +1,4 @@
-Dong fang Instagram-Viewer
+Instagram-Viewer
 ======
 ##Description
 This application is a view only application for the instagram most popular posts. It contains images, captions, author username
